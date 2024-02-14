@@ -4,6 +4,9 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #fae1dd;
+
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
 }
 
 .container {
@@ -49,11 +52,11 @@ body {
 .card {
   position: absolute;
   background-color: #eae2b7;
-  width: 270px;
-  height: 170px;
-  top: 5px;
-  left: 15px;
-  box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+  width: 16.875rem;
+  height: 10.625rem;
+  top: 0.3125rem;
+  left: 0.9375rem;
+  box-shadow: -0.3125rem -0.3125rem 6.25rem rgba(0, 0, 0, 0.4);
 }
 
 .card:before {
@@ -80,7 +83,7 @@ body {
 
 .heart {
   background-color: #d62828;
-  display: inline-block;
+  display: flex;
   height: 30px;
   margin: 0 10px;
   position: relative;
@@ -88,6 +91,7 @@ body {
   left: 105px;
   transform: rotate(-45deg);
   width: 30px;
+  z-index: 0;
 }
 
 .heart:before,
